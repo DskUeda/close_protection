@@ -1,0 +1,16 @@
+/* footer.scss
+------------------------------------------------------------*/
+footer {
+    position: relative;
+    #copyright {
+        text-align: center;
+        background: url(../img/bg_foot.jpg) repeat 50% 50%/cover;
+        padding: 20px 0;
+        color: #fff;
+        font-size: 12px;
+        img {
+            width: 120px;
+            height: auto;
+        }
+    }
+}

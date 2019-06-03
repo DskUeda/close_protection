@@ -1,0 +1,16 @@
+@charset "utf-8";
+$key-gray: #606060;
+$key-gold: #d5d1b4;
+
+@import "parts/_body.scss";
+@import "parts/_header.scss";
+@import "parts/_content.scss";
+@import "parts/_footer.scss";
+@import "parts/_form.scss";
+
+//PC設定
+@media screen and (min-width: 768px) {
+    @import "parts/_768pc.scss";
+}
+//.pc .sp設定
+@import "parts/_setting.scss";

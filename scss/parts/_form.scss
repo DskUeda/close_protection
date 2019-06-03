@@ -1,0 +1,39 @@
+form {
+    display: block;
+    max-width: 600px;
+    //margin: 0 auto;
+    label, input, textarea {
+        display: block;
+        width: 100%;
+        box-sizing: border-box;
+        margin-bottom: .8em;
+    }
+    label {
+        font-weight: bold;
+    }
+    input {
+        padding: .8em .5em;
+        border: 1px solid $key-gold;
+        border-radius: 4px;
+    }
+    textarea {
+        border: 1px solid $key-gold;
+        border-radius: 4px;
+        height: 8em;
+        padding: .8em .5em;
+    }
+    button {
+        display: block;
+        border: 1px solid $key-gold;
+        font-size: 1.2em;
+        width: 100%;
+        padding: .5em 0;
+        border-radius: 4px;
+        margin-top: 2em;
+        cursor: pointer;
+        &:hover {
+            background-color: $key-gold;
+            color: #fff;
+        }
+    }
+}

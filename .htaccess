@@ -1,0 +1,4 @@
+Options +IncludesNOEXEC
+Options +Includes
+AddHandler server-parsed html
+

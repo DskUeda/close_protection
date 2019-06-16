@@ -42,24 +42,48 @@
         margin-left: -15px;
         //box-shadow: 2px 2px 2px rgba(0, 0, 0, 0.2);
     }
-    .back {
+    .bg_top {
         position: fixed;
         top: 0;
         left: 0;
         right: 0;
-        z-index: -100;
         display: block;
         width: 100%;
         height: 100vh;
-        opacity: .4;
-        &.bg_01 {
-            background: url(../img/bg_top_01.jpg) no-repeat 50% 50%/cover;
+        background: #fff;
+        z-index: -10;
+        opacity: .7;
+    }
+    #bg_box {
+        .back {
+            position: fixed;
+            top: 0;
+            left: 0;
+            right: 0;
+            z-index: -100;
+            display: block;
+            width: 100%;
+            height: 100vh;
+            //opacity: .4;
+            animation  : bgAnime 15s infinite;
+            &.bg_01 {
+                background: url(../img/bg_top_01.jpg) no-repeat 50% 50%/cover;
+            }
+            &.bg_02 {
+                background: url(../img/bg_top_02.jpg) no-repeat 50% 50%/cover;
+                animation-delay  : 5s;
+            }
+            &.bg_03 {
+                background: url(../img/bg_top_03.jpg) no-repeat 50% 50%/cover;
+                animation-delay  : 10s;
+            }
         }
-        &.bg_02 {
-            //background: url(../img/bg_top_02.jpg) no-repeat 50% 50%/cover;
-        }
-        &.bg_03 {
-            //background: url(../img/bg_top_03.jpg) no-repeat 50% 50%/cover;
+        @keyframes bgAnime {
+            0% { opacity: 0; }
+            8% { opacity: 1; }
+            33.333% { opacity: 1; }
+            40% { opacity: 0; }
+            100% { opacity: 0; }
         }
     }
 

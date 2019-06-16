@@ -63,7 +63,18 @@ body {
     border-right: 6px solid #7f7f7f;
     transform: rotate(45deg);
     margin-left: -15px; }
-  #wrap-header .back {
+  #wrap-header .bg_top {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    display: block;
+    width: 100%;
+    height: 100vh;
+    background: #fff;
+    z-index: -10;
+    opacity: .7; }
+  #wrap-header #bg_box .back {
     position: fixed;
     top: 0;
     left: 0;
@@ -72,9 +83,26 @@ body {
     display: block;
     width: 100%;
     height: 100vh;
-    opacity: .4; }
-    #wrap-header .back.bg_01 {
+    animation: bgAnime 15s infinite; }
+    #wrap-header #bg_box .back.bg_01 {
       background: url(../img/bg_top_01.jpg) no-repeat 50% 50%/cover; }
+    #wrap-header #bg_box .back.bg_02 {
+      background: url(../img/bg_top_02.jpg) no-repeat 50% 50%/cover;
+      animation-delay: 5s; }
+    #wrap-header #bg_box .back.bg_03 {
+      background: url(../img/bg_top_03.jpg) no-repeat 50% 50%/cover;
+      animation-delay: 10s; }
+@keyframes bgAnime {
+  0% {
+    opacity: 0; }
+  8% {
+    opacity: 1; }
+  33.333% {
+    opacity: 1; }
+  40% {
+    opacity: 0; }
+  100% {
+    opacity: 0; } }
   #wrap-header #menu-btn {
     display: inline-block;
     position: fixed;
